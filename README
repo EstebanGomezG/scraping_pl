@@ -1,0 +1,30 @@
+📜 Proyecto de Ley Scraper
+Este script se encarga de hacer scraping de proyectos de ley específicos en el sitio web del Senado de Colombia, usando Selenium para automatizar Chrome. Está pensado para encontrar y extraer información relevante sobre proyectos de ley filtrados con una palabra clave, en este caso, "Omar%Restrepo".
+
+🚀 Requisitos
+Python 3.x
+Selenium: para manejar el navegador.
+Pandas: para organizar y guardar los datos.
+Webdriver Manager para Chrome: nos facilita el uso de chromedriver sin descargarlo manualmente.
+Instala los requisitos con:
+
+bash
+Copiar código
+pip install selenium pandas webdriver-manager
+🛠️ Cómo funciona
+Configura el Navegador: Usamos ChromeDriverManager para manejar la instalación del driver de Chrome.
+Automatiza el Proceso: Abrimos el navegador, ingresamos al sitio de proyectos de ley, buscamos usando la palabra clave, ajustamos la cantidad de resultados, y capturamos los datos.
+Extrae los Datos: Captura el enlace, fecha de radicación, autor y estado de comisión de cada proyecto que aparece en la búsqueda.
+Guarda en CSV: Toda la información se organiza y se guarda en un archivo .csv llamado PL_Omar.csv para facilitar el análisis posterior.
+💻 Uso
+Ejecuta el script desde la terminal con:
+
+bash
+Copiar código
+python Scrapping_PL_2024.py
+El archivo PL_Omar.csv se generará en el directorio actual, conteniendo todos los resultados filtrados de la búsqueda.
+
+⚠️ Notas
+Este script utiliza time.sleep() para hacer pausas en la navegación y permitir que los elementos carguen. Si notas problemas de velocidad o carga de datos, podrías ajustar estos tiempos.
+Asegúrate de revisar la estructura del sitio regularmente, ya que cambios en la estructura HTML podrían afectar el funcionamiento del script.
+¡Listo para automatizar y analizar proyectos de ley como un pro! 🎩
