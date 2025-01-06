@@ -64,7 +64,7 @@ def main():
     df = pd.DataFrame(data)
     print(df)
 
-    df.to_csv("PL_Omar.csv", index=False)
+    ##df.to_csv("PL_Omar.csv", index=False)
      
 if __name__ == "__main__":
     main()
